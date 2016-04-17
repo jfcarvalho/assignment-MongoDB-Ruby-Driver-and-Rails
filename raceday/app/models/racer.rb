@@ -14,10 +14,15 @@ def self.mongo_client
     @@db = Mongo::Client.new('mongodb://localhost:27017/raceday_development')
   end
 
+def save
+	result = self.class.collection.insert_one(number:@number, first_name:@first_name, last_name:@last_name, gender:@gender, group:@group, secs:@secs)
+	@id=result.inserted_id.to_s
+end
+
 def self.collection
     self.mongo_client if not @@db
     @@db[:racers]
-  end
+end
 
 def initialize(params={})
 	@id=params[:_id].nil? ? params[:id] : params[:_id].to_s
