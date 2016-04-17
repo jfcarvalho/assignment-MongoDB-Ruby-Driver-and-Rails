@@ -7,3 +7,6 @@
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
 MONGODB | Adding localhost:27017 to the cluster.
   [1m[35m (0.1ms)[0m  rollback transaction
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | Adding localhost:27017 to the cluster.
