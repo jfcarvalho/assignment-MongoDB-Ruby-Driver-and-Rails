@@ -10,3 +10,87 @@ MONGODB | Adding localhost:27017 to the cluster.
 MONGODB | Adding localhost:27017 to the cluster.
 MONGODB | Adding localhost:27017 to the cluster.
 MONGODB | Adding localhost:27017 to the cluster.
+Started GET "/" for 127.0.0.1 at 2016-04-18 16:17:57 -0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (369.8ms)
+Completed 200 OK in 1442ms (Views: 1405.3ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-04-18 16:18:00 -0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (298.8ms)
+Completed 200 OK in 313ms (Views: 312.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers/571532e5b719850d9ccafe99" for 127.0.0.1 at 2016-04-18 16:18:01 -0300
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"571532e5b719850d9ccafe99"}
+  Rendered racers/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-04-18 16:18:01 -0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (240.8ms)
+Completed 200 OK in 252ms (Views: 251.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers/571532e5b719850d9ccafe99/edit" for 127.0.0.1 at 2016-04-18 16:18:01 -0300
+Processing by RacersController#edit as HTML
+  Parameters: {"id"=>"571532e5b719850d9ccafe99"}
+  Rendered racers/_form.html.erb (136.8ms)
+  Rendered racers/edit.html.erb within layouts/application (154.2ms)
+Completed 200 OK in 177ms (Views: 175.5ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-04-18 16:18:02 -0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (353.0ms)
+Completed 200 OK in 368ms (Views: 367.5ms | ActiveRecord: 0.0ms)
+Started GET "/racers/new" for 127.0.0.1 at 2016-04-18 16:18:02 -0300
+Processing by RacersController#new as HTML
+  Rendered racers/_form.html.erb (3.7ms)
+  Rendered racers/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-04-18 16:18:02 -0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (342.6ms)
+Completed 200 OK in 360ms (Views: 359.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers/new" for 127.0.0.1 at 2016-04-18 16:18:03 -0300
+Processing by RacersController#new as HTML
+  Rendered racers/_form.html.erb (4.3ms)
+  Rendered racers/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+Started POST "/racers" for 127.0.0.1 at 2016-04-18 16:18:03 -0300
+Processing by RacersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qDi/z3FTf48/B+xKQAHgBEjNu7KBlnapVAN+SXFlD2Tm58+hGJHLS7bcGctIV8PsucKem2l9ScwWxXL28QdKag==", "racer"=>{"number"=>"1", "first_name"=>"Carly", "last_name"=>"Fiorino", "gender"=>"F", "group"=>"60 to 69", "secs"=>"2833"}, "commit"=>"Create Racer"}
+Redirected to http://www.example.com/racers/571532ebb719850d9ccb027c
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+Started GET "/racers/571532ebb719850d9ccb027c" for 127.0.0.1 at 2016-04-18 16:18:03 -0300
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"571532ebb719850d9ccb027c"}
+  Rendered racers/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-04-18 16:18:03 -0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (341.0ms)
+Completed 200 OK in 355ms (Views: 354.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers/571532e5b719850d9ccafe95/edit" for 127.0.0.1 at 2016-04-18 16:18:03 -0300
+Processing by RacersController#edit as HTML
+  Parameters: {"id"=>"571532e5b719850d9ccafe95"}
+  Rendered racers/_form.html.erb (3.2ms)
+  Rendered racers/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+Started PATCH "/racers/571532e5b719850d9ccafe95" for 127.0.0.1 at 2016-04-18 16:18:03 -0300
+Processing by RacersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"39n2PNPLtl+d6lA05p2tb0aarafeyhPM2Ztcba1/Rwo0pVPg8j9kl+R2E9kiA0r47UlLQD3VauvFYfbLAbUImw==", "racer"=>{"number"=>"1", "first_name"=>"Joe", "last_name"=>"Pesci", "gender"=>"M", "group"=>"masters", "secs"=>"3994"}, "commit"=>"Update Racer", "id"=>"571532e5b719850d9ccafe95"}
+Redirected to http://www.example.com/racers/571532e5b719850d9ccafe95
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+Started GET "/racers/571532e5b719850d9ccafe95" for 127.0.0.1 at 2016-04-18 16:18:03 -0300
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"571532e5b719850d9ccafe95"}
+  Rendered racers/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2016-04-18 16:18:03 -0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (273.5ms)
+Completed 200 OK in 285ms (Views: 284.5ms | ActiveRecord: 0.0ms)
+Started DELETE "/racers/571532e5b719850d9ccafe94" for 127.0.0.1 at 2016-04-18 16:18:04 -0300
+Processing by RacersController#destroy as HTML
+  Parameters: {"id"=>"571532e5b719850d9ccafe94"}
+Redirected to http://www.example.com/racers
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+Started GET "/racers" for 127.0.0.1 at 2016-04-18 16:18:04 -0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (246.4ms)
+Completed 200 OK in 258ms (Views: 257.1ms | ActiveRecord: 0.0ms)
