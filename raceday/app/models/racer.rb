@@ -1,6 +1,7 @@
 class Racer
   include Mongoid::Document
-
+  include ActiveModel::Model
+ 
   require 'mongo'
   require 'pp'
   require 'byebug'
@@ -18,6 +19,11 @@ def save
 	result = self.class.collection.insert_one(number:@number, first_name:@first_name, last_name:@last_name, gender:@gender, group:@group, secs:@secs)
 	@id=result.inserted_id.to_s
 end
+
+def persisted?
+    !@id.nil?
+  end
+  
 
 def update(params)
 	@number = params[:number].to_i
